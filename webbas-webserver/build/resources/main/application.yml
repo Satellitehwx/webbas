@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev #dev|test|prod
+
+# 配置mybatis扫描
+mybatis:
+  type-aliases-package: com.javalow.domain
+  mapper-locations: classpath:mapper/*Mapper.xml
