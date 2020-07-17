@@ -1,2 +1,5 @@
+//工程名称
 rootProject.name = 'webbas'
+include 'webbas-common'
+include 'webbas-webserver'
 

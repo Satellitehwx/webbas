@@ -1,2 +1,4 @@
 /.idea/
 /.gradle/
+/webbas-common/build/
+/webbas-webserver/build/
