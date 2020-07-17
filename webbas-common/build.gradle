@@ -1,0 +1,15 @@
+archivesBaseName = 'webbas-common'
+
+jar.enabled = true
+bootJar.enabled = false
+
+dependencies {
+    implementation('org.springframework.boot:spring-boot-starter')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+
+    compile('cn.hutool:hutool-all:5.3.3')
+    compile('org.springframework.boot:spring-boot-starter-data-redis')
+    compile('redis.clients:jedis:2.9.1')
+    annotationProcessor ('org.projectlombok:lombok:1.18.2')
+    compileOnly('org.projectlombok:lombok:1.18.2')
+}
