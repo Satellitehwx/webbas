@@ -1,5 +1,6 @@
 package com.javalow.controller;
 
+import com.javalow.utils.idgenerate.BuildIdFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,6 +29,8 @@ public class RedisController {
 
     @GetMapping("/get")
     public Object getValue(String key) {
+        Long ID = BuildIdFactory.getInstance().buildFactoryOrderId();
+        System.out.println("========ID========>{}" + ID);
         return stringRedisTemplate.opsForValue().get(key);
     }
 
